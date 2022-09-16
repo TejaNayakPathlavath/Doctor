@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Pain-Head</title>
+    <link rel="stylesheet" href="/Doctor Pain.css">
+    <link rel="icon" type="image/x-icon" href="/images/dpt.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="background-color: black
+;">
+    <!--nav bar info-->
+    <nav class="navbar navbar-expand-lg bg-light " >
+        <div class="container-fluid"> 
+            <!--logo info-->  
+        <img src="/images/Dp.png" alt="Logo" style="width:60px;"class="rounded float-start">
+        <!-- nav text info-->
+        <div class="container-fluid">
+        <p id="_head" class="nav-text justify-content-center fs-2" ><spa style="color: red
+        ;"> Mark</spa>  the checkbox to identify the type of  <span style="color: blue
+        ;"> "headache"</span> </p>
+    </div>
+        </div></nav> 
+        <h1>Select the Button</h1>
+        <p id="_name" style="color:white;
+        text-align: center;
+        font-size: 25px;
+        font-family: Franklin Gothic Medium;
+        "></p>
+    <form action="#" >
+        <fieldset>
+            
+ <!--Enter your Name -->
+        <label for="name">Enter your Name</label><br><br>
+        <input type="text" name="name" placeholder="Enter Your Name" required oninput="myInput()"><br><br>
+ <!--Migraine -->
+ <input type="radio" name="radio" onclick="Mgh()" >&nbsp;
+        <label for="Migraine">flashing lights,shimmering lights ,zigzag lines,stars,blind spots</label><br><br>
+<!--Spinal headache -->    
+<input type="radio" name="radio" onclick="Sph()" >&nbsp;
+        <label for="Spinal headache">forehead,temples,upper neck,back of the head</label><br><br>
+<!--Tension headache -->
+        <input type="radio" name="radio" onclick="myFunction()">&nbsp;
+        <label for="Tension headache">Dull, aching head pain ,Sensation of tightness or pressure across the </label><br><label for="">forehead or on the sides and back of the head ,Tenderness in the scalp, neck and shoulder muscles</label><br>
+
+    </fieldset>
+    </form>
+    <aside>
+        <img  id="headache" src="/images/png/headache.png" alt="types of headaches">
+    </aside>
+    <script>
+        function Mgh(){
+            document.getElementById("_name").innerHTML="don't be late your suffering with <b>'Migraine Hedache'</b>"+"</br>"+'you had better to consult a <b>"Neurolarist"</b>';
+        }
+        function Sph(){
+            document.getElementById("_name").innerHTML= "your suffering with 'Spinal headache'"+"</br>"+'you had better to consult a <b>"Neurolarist"</b>';
+
+        }
+        function myFunction(){
+            document.getElementById("_name").innerHTML= "your suffering with <b>'Tension headache'</b>"+"<br>"+"don't feel too pressured "+"when you feel pressured take a deep breath 10 times"+"</br>"+' anyway you better to consult once  a<b>"Neurolarist"</b>';
+        }
+        
+    </script>
+</body >
+
+</html>

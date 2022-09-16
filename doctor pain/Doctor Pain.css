@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#b{ background-color: black;
+
+}
+#_txt{
+    margin-left: 50px;
+    font-family:Century Gothic;
+    font-weight:bold;
+
+}
+#welcom{
+    color: rgb(253, 3, 3);
+}
+#Cause{
+    color: rgb(254, 3, 3);
+    display: none;
+text-align:center;
+margin-top:-40px;
+margin-left: 100px;
+font-weight: bold;
+}
+
+@media(max-width:768px){
+    #Cause{
+        display:flex;
+    } 
+    #_txt{
+        display: none;
+    }
+}
+/* head form */
+#_head{
+    text-align: center;
+    font-family:Century Gothic;
+    font-weight:bold;
+}
+h1{
+    color: aqua;
+    text-align: center;
+    padding-top: 20px;
+}
+form {
+    width: 800px;
+    float: right;
+    font-size: 25px;
+  }
+  fieldset {
+    color: white;
+    padding: 20px;
+
+  }
+  input[type="radio"]{
+    width: 30px; 
+    height: 30px; 
+  }
+  input:hover{
+    background-color: rgb(254, 217, 181);
+  }
+  #headache{
+margin: right 50%;
+width: 35%;
+  }
+/*Neck page*/
+.ts{
+    font-size: 20px;
+}
+#neck{
+    display: inline;
+    
+width: 25%;
+}
+aside{
+    margin-left: 100px;
+}
+/*chest*/
+#heart{
+    width: 38%;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Pain</title>
+    <link rel="stylesheet" href="/Doctor Pain.css">
+    <link rel="icon" type="image/x-icon" href="/images/dpt.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="background-color: black
+;">
+    <!--nav bar info-->
+    <nav class="navbar navbar-expand-lg bg-light " >
+        <div class="container-fluid"> 
+            <!--logo info-->  
+        <img src="/images/Dp.png" alt="Logo" style="width:60px;"class="rounded float-start">
+        <!-- nav text info-->
+        <div class="container-fluid">
+        <p id="_head" class="nav-text justify-content-center fs-2" ><spa style="color: red
+        ;"> Mark</spa>  the RadioButton to identify the type of  <span style="color: blue
+        ;"> "Neck Pain"</span> </p>
+    </div>
+        </div></nav> 
+        <h1>Select the Button</h1>
+        <p id="_name" style="color:rgb(244, 252, 1);
+        text-align: center;
+        font-size: 25px;
+        font-family: Franklin Gothic Medium;
+        "></p>
+    <form action="#" >
+        <fieldset >
+            
+ <!--Enter your Name -->
+        <label class="ts" for="name">Enter your Name</label><br><br>
+        <input type="text" name="name" placeholder="Enter Your Name" required oninput="myInput()"><br><br>
+ <!--Stiff neck -->
+ <input type="radio" name="radio" onclick="Mgh()" >&nbsp;
+        <label  class="ts" for="Stiff neck">Soreness and difficulty moving the neck, </br>especially when trying to turn the head from side to side.</label><br><br>
+<!--Radicular pain. -->    
+<input type="radio" name="radio" onclick="Sph()" >&nbsp;
+        <label class="ts" for="Radicular pain">This pain can radiate along a nerve from the neck into the shoulder and arm.</br> The intensity can vary and this nerve pain might feel like it is burning or searing.</label><br><br>
+<!--Sharp pain -->
+        <input type="radio" name="radio" onclick="myFunction()">&nbsp;
+        <label class="ts"  for="Sharp pain">This pain may be localized to one spot and might feel like it is stabbing or stinging.</br> This type of pain typically occurs in the lower neck. </label><br>
+
+    </fieldset>
+    </form>
+    <aside>
+        <img  id="neck" src="/images/neck pain.jpg" alt="types of headaches">
+    </aside>
+    <script>
+        function Mgh(){
+            document.getElementById("_name").innerHTML="don't be late your suffering with <b>'Stiff neck'</b>"+"</br>"+'you had better to consult a <b>" otolaryngologist"';
+        }
+        function Sph(){
+            document.getElementById("_name").innerHTML="your suffering with <b>'Radicular pain'</b>"+'  you Must to consult once  <b>" otolaryngologist"</b>';
+
+        }
+        function myFunction(){
+            document.getElementById("_name").innerHTML= "your suffering with <b>'Sharp pain'</b>"+'  you better to consult once  <b>" otolaryngologist"</b>';
+        }
+        
+    </script>
+</body >
+
+</html>
